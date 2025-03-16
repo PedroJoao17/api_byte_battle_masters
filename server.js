@@ -133,7 +133,7 @@ app.use((req, res, next) => {
 });
 
 // Endpoint para fornecer uma pergunta aleatória
-app.get('/question', (req, res) => {
+app.get('/', (req, res) => {
   const randomQuestion = getRandomQuestion();  // Obtém uma pergunta aleatória
   res.json(randomQuestion);  // Retorna a pergunta sorteada em formato JSON
 });
